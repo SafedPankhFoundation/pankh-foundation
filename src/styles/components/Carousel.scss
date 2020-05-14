@@ -1,0 +1,134 @@
+.Banner {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  ul {
+    @include reset-list;
+  }
+}
+
+.carousel {
+  margin-bottom: 200px;
+
+  // ====================
+  // CAROUSEL SLIDE
+  // ====================
+  .carousel_slides {
+    // background-color: red;
+    height: 100%;
+  }
+  .carousel_slide {
+    @include container();
+    height: 100%;
+
+    display: none;
+    text-align: center;
+
+    &_img {
+      overflow: hidden;
+      img {
+        width: 100%;
+        min-height: 400px;
+        object-fit: cover;
+        filter: brightness(85%);
+        transition: filter 1s ease-in-out;
+        &:hover {
+          filter: brightness(100%);
+        }
+      }
+    }
+
+    &_content {
+      position: absolute;
+      font-weight: 800;
+      z-index: 400;
+      bottom: 20px;
+      color: white;
+      text-shadow: 5px 2px 6px #333;
+      font-size: 10px;
+      width: 75%;
+      left: 12.5%;
+
+      @media #{$mobile-up-query} {
+        font-size: 15px;
+      }
+      @media #{$tablet-up-query} {
+        font-size: 25px;
+      }
+      @media #{$desktop-up-query} {
+        font-size: 33px;
+      }
+    }
+
+    &-active {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+
+  // ====================
+  // CAROUSEL ARROWS
+  // ====================
+
+  .leftArrow,
+  .rightArrow {
+    cursor: pointer;
+    position: absolute;
+    z-index: 300;
+    &:hover {
+      fill: rgb(209, 209, 207);
+    }
+    top: 40%;
+    width: 30px;
+    @media #{$tablet-up-query} {
+      width: 40px;
+    }
+    @media #{$desktop-up-query} {
+      width: 50px;
+      top: 45%;
+    }
+  }
+  .leftArrow {
+    left: 15px;
+  }
+  .rightArrow {
+    right: 15px;
+  }
+
+  // ====================
+  // CAROUSEL INDICATORS
+  // ====================
+  .carousel_indicators {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+    .carousel_indicator {
+      background-color: #111;
+      cursor: pointer;
+      display: block;
+      height: 3px;
+      opacity: 0.15;
+      transition: opacity 0.15s cubic-bezier(0.4, 0, 1, 1);
+      width: 24px;
+
+      &-active {
+        &,
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    li {
+      &:nth-of-type(n + 2) {
+        margin-left: 9px;
+      }
+    }
+  }
+}

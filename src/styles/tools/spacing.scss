@@ -1,0 +1,37 @@
+@mixin giveMargin($t, $r: $t, $b: $t, $l: $t) {
+  margin: $t $r $b $l;
+}
+
+@mixin container($width: 0, $multiplier: 0) {
+  margin: 0 auto;
+  padding: 0 $default-space * $multiplier;
+
+  @if ($width != 0) {
+    max-width: $width;
+  } @else {
+    width: 100%;
+  }
+}
+
+
+@mixin mp($x) {
+  // more mixins using @if etc logic
+  margin: $x;
+  padding: $x;
+}
+
+@mixin mp-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin mp-1 {
+  // have to look into other popular frameworks/libaries to see how they do it
+  margin: 5px;
+  padding: 5px;
+}
+
+@mixin mp-2 {
+  margin: 10px;
+  padding: 10px;
+}

@@ -1,0 +1,51 @@
+// import fonts here
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500&family=Poppins:ital,wght@0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500|Josefin+Slab:400,600&display=swap");
+// WIDTHS
+
+// $Mobile: 375px;
+// $Desktop: 1440px;
+$mobile: 375px;
+$tablet: 768px;
+$desktop: 1024px;
+$big-desktop: 1280px;
+
+// MEDIA
+$mobile-up-query: "only screen and (min-width : #{$mobile})";
+$mobile-down-query: "only screen and (max-width : #{$mobile})";
+$tablet-up-query: "only screen and (min-width : #{$tablet})";
+$tablet-down-query: "only screen and (max-width : #{$tablet})";
+$desktop-up-query: "only screen and (min-width : #{$desktop})";
+$desktop-down-query: "only screen and (max-width : #{$desktop})";
+$big-desktop-up-query: "only screen and (min-width : #{$big-desktop})";
+ 
+// ======= COLORS =======
+
+// PRIMARY
+$primary-green: rgba(32, 232, 2, 0.5); //whatever
+$primary-red: rgba(233, 23, 59, 0.5); //etc
+
+// SECONDARY
+
+// NEUTRAL
+
+// Dark Theme
+
+$primary-green-dark: darken($primary-green, 32);
+
+// Light Theme
+
+$primary-green-light: lighten($primary-green, 32);
+
+// ======= TYPOGRAPHY =======
+
+$body-font: "Poppins", sans-serif;
+$heading-font: "Josefin Sans", sans-serif;
+$font4: "Josefin Slab", serif;
+
+$test2: #d5ac4e;
+$test3: #8b6220;
+$test1: #eecf6d;
+// Others
+
+$default-space: 1.5rem;

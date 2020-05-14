@@ -9,7 +9,7 @@
 
 ## Getting Started
 
-**1.** Fork [this](https://github.com/aman-atg/safed-pankh-foundation-demo/) repository :fork_and_knife:
+**1.** Fork [this](https://github.com/SafedPankhFoundation/pankh-foundation/) repository :fork_and_knife:
 
 **2.** Clone your forked repository to your local system :busts_in_silhouette:
 ```sh

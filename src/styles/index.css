@@ -756,6 +756,11 @@ body {
 .footer-links {
   display: grid;
   grid-template-rows: auto;
+  padding-left: 0;
+}
+
+.Footer ul {
+  list-style-type: none;
 }
 
 .Footer ul > li {

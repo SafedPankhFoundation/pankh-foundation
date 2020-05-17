@@ -6,6 +6,47 @@
 }
 
 .signin-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    clip-path: polygon(0 0, 55% 0, 65% 100%, 0% 100%); /* this makes the diagonal line */
+}
+
+.left-container {
+    height: 100%;
+    width: 60%;
+    text-align: center;
+}
+
+.signup-field {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #01934a;
+    color: white;
+    width:100%;
+    height: 100%;
+    clip-path: polygon(55% 0, 100% 0, 100% 100%, 65% 100%); /* this makes the diagonal line */
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-fill {
+    height: 100%;
+    width: 60%;
+}
+
+.right-container {
+    height: 100%;
+    width: 40%;
+    text-align: center;
+}
+
+/* 
+.signin-form {
     width:60%;
     height: 100%;
     text-align: center;
@@ -17,4 +58,65 @@
     width:40%;
     height: 100%;
     text-align: center;
+} */
+
+.signin-form form {
+    width:100%;
+    height: 100%;
 }
+
+.signin-form h1 {
+    margin-top: 0;
+    padding-top: 10%
+}
+
+.signup-field h1 {
+    margin-top: 0;
+    padding-top: 30%
+}
+
+.signin-form [type=text], .signin-form [type=password] {
+    width: 80%;
+    margin-bottom:3%
+}
+
+.password-options {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+    .sign-in {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signin-form {
+        width:100%;
+        text-align: center;
+        position: relative;
+        clip-path: none;
+    }
+
+    .left-container {
+        width: 100%;
+    }
+
+    .signup-field {
+        width:100%;
+        text-align: center;
+        position: relative;
+        clip-path: none;
+    }
+
+    .left-fill {
+        width:0;
+    }
+
+    .right-container {
+        width: 100%;
+    }
+  }

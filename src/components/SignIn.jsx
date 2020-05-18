@@ -6,7 +6,7 @@ const SignIn = () => {
     <div className="sign-in">
       <div className="signin-form">
         <div className="left-container">
-          <form>
+          <form action="/#" method="post">
             <h1>Sign In to your Account</h1>
             <h3>Login to your account with UserId & Password</h3>
             <input type="text" name="email" placeholder="Email" /><br></br>
@@ -14,13 +14,13 @@ const SignIn = () => {
             <div className="password-options">
               <div>
                 <input type="checkbox" id="remember-me" name="remember" value="remember" />
-                <label for="remember-me"> Remember Me</label>
+                <label for="remember-me">Remember Me</label>
               </div>
               <div>
                 <span>Forgot password</span>
               </div>
             </div>
-            <input type="submit" value="Sign In"/>
+            <input className="signin-button" type="submit" value="Sign In"/>
             <p>Social icons</p>
           </form>
         </div>

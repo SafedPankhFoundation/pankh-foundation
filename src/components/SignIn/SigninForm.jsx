@@ -17,7 +17,7 @@ const SigninForm = (props) => {
                 <label htmlFor="remember-me">Remember Me</label>
               </div>
               <div>
-                <span className="forgot-password">Forgot password</span>
+                <a href="#" className="forgot-password">Forgot password</a>
               </div>
             </div>
             <input className="signin-green-button" type="submit" value="Sign In" onClick={handleUserLogin}/>

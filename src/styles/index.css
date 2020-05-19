@@ -911,6 +911,11 @@ body {
   margin-bottom: 3%;
 }
 
+.signin-form [type=text]:focus, .signin-form [type=password]:focus {
+  background-color: lightgoldenrodyellow;
+  border: 1px solid #01934a;
+}
+
 .password-options {
   width: 80%;
   display: flex;
@@ -926,6 +931,8 @@ body {
 
 .forgot-password {
   padding-right: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 .signin-green-button {

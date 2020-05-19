@@ -1,9 +1,7 @@
 import React from "react";
-import "../"
 
-const SignIn = () => {
+const SigninForm = () => {
   return (
-    <div className="sign-in">
       <div className="signin-form">
         <div className="left-container">
           <form action="/#" method="post">
@@ -25,17 +23,7 @@ const SignIn = () => {
           </form>
         </div>
       </div>
-      <div className="signup-field">
-        {/* this div is needed to push the content float right */}
-        <div className="left-fill"></div>
-        <div className="right-container">
-          <h1>Don't have account yet?</h1>
-          <p>Lets get you all set that can create on your first on boarding experience</p>
-          <input type="submit" value="Sign Up"/>
-        </div>
-      </div>
-    </div>
   );
 };
 
-export default SignIn;
+export default SigninForm;

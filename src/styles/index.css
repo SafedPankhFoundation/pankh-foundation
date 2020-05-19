@@ -931,6 +931,12 @@ body {
   margin-bottom: 7%;
 }
 
+.signup-button {
+  cursor: pointer;
+  margin-top: 7%;
+  padding: 1%;
+}
+
 @media only screen and (max-width: 600px) {
   .sign-in {
     display: flex;

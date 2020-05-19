@@ -5,7 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import App from "./App";
-import SignIn from "./components/SignIn";
+import SignIn from "./components/SignIn/SignIn";
 
 const Navigation = () => {
     return (

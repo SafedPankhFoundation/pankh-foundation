@@ -1,4 +1,5 @@
 import React from "react";
+import SocialIcons from "./SocialIcons";
 
 const SigninForm = (props) => {
   const {email, handleEmailChange, password, handlePasswordChange, handleUserLogin} = props.loginInfo;
@@ -16,11 +17,11 @@ const SigninForm = (props) => {
                 <label htmlFor="remember-me">Remember Me</label>
               </div>
               <div>
-                <span>Forgot password</span>
+                <a href="#" className="forgot-password">Forgot password</a>
               </div>
             </div>
-            <input className="signin-button" type="submit" value="Sign In" onClick={handleUserLogin}/>
-            <p>Social icons</p>
+            <input className="signin-green-button" type="submit" value="Sign In" onClick={handleUserLogin}/>
+            <SocialIcons />
           </form>
         </div>
       </div>

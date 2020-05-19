@@ -911,6 +911,11 @@ body {
   margin-bottom: 3%;
 }
 
+.signin-form [type=text]:focus, .signin-form [type=password]:focus {
+  background-color: lightgoldenrodyellow;
+  border: 1px solid #01934a;
+}
+
 .password-options {
   width: 80%;
   display: flex;
@@ -919,7 +924,18 @@ body {
   justify-content: space-between;
 }
 
-.signin-button {
+.password-options input[type=checkbox] {
+  margin-left: 5px;
+  margin-right: 3px;
+}
+
+.forgot-password {
+  padding-right: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.signin-green-button {
   background-color: #01934a;
   color: white;
   padding: 1%;
@@ -935,6 +951,13 @@ body {
   cursor: pointer;
   margin-top: 7%;
   padding: 1%;
+}
+
+.sign-social-icons {
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+  margin-left: 30%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -967,6 +990,10 @@ body {
 
   .right-container {
     width: 100%;
+  }
+
+  .forgot-password {
+    padding-right: 0;
   }
 }
 

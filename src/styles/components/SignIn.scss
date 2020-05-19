@@ -88,7 +88,16 @@
     justify-content: space-between;
 }
 
-.signin-button {
+.password-options input[type=checkbox] {
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+.forgot-password {
+    padding-right: 20px;
+}
+
+.signin-green-button {
     background-color: #01934a;
     color: white;
     padding: 1%;
@@ -104,6 +113,13 @@
     cursor: pointer;
     margin-top: 7%;
     padding: 1%;
+}
+
+.sign-social-icons {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    margin-left: 30%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -136,5 +152,9 @@
 
     .right-container {
         width: 100%;
+    }
+
+    .forgot-password {
+        padding-right: 0;
     }
   }

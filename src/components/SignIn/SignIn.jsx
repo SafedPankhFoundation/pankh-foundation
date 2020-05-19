@@ -8,19 +8,15 @@ const SignIn = () => {
 
 
 const handleEmailChange = (e) => {
-    console.log(e.target.value)
     setEmail(e.target.value);
 }
 
 const handlePasswordChange = (e) => {
-    console.log(e.target.value)
     setPassword(e.target.value);
 }
 
 const handleUserLogin = (e) => {
     e.preventDefault();
-    console.log(email);
-    console.log(password)
     // handle user athentification
 }
 

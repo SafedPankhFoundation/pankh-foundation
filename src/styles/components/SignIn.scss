@@ -6,21 +6,24 @@
 }
 
 .signin-form {
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
-    width:100%;
+    left: 0; */
+    width:55%;
     height: 100%;
-    clip-path: polygon(0 0, 55% 0, 65% 100%, 0% 100%); /* this makes the diagonal line */
-}
-
-.left-container {
-    height: 100%;
-    width: 60%;
     text-align: center;
+    /* clip-path: polygon(0 0, 55% 0, 65% 100%, 0% 100%); */
 }
 
 .signup-field {
+    width:45%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.right-green-container {
     position: absolute;
     top: 0;
     right: 0;
@@ -39,26 +42,11 @@
     width: 60%;
 }
 
-.right-container {
+.right-signup-proposal {
     height: 100%;
     width: 40%;
     text-align: center;
 }
-
-/* 
-.signin-form {
-    width:60%;
-    height: 100%;
-    text-align: center;
-}
-
-.signup-field {
-    background-color: #01934a;
-    color: white;
-    width:40%;
-    height: 100%;
-    text-align: center;
-} */
 
 .signin-form form {
     width:100%;

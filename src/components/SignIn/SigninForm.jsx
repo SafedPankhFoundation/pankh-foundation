@@ -5,7 +5,6 @@ const SigninForm = (props) => {
   const {email, handleEmailChange, password, handlePasswordChange, handleUserLogin} = props.loginInfo;
   return (
       <div className="signin-form">
-        <div className="left-container">
           <form action="/#" method="post">
             <h1>Sign In to your Account</h1>
             <h3>Login to your account with UserId & Password</h3>
@@ -23,7 +22,6 @@ const SigninForm = (props) => {
             <input className="signin-green-button" type="submit" value="Sign In" onClick={handleUserLogin}/>
             <SocialIcons />
           </form>
-        </div>
       </div>
   );
 };
